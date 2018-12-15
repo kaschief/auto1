@@ -37,11 +37,12 @@
   justify-content: flex-start;
 }
 
-.nav-links > p {
+.nav-links > span {
   padding-left: 8px;
   padding-right: 8px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .nav-logo {
@@ -80,6 +81,34 @@
   height: 100%;
   margin: 0px;
   padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Roboto', sans-serif;
+  color: #4a4a4a;
+}
+
+.vier > h1 {
+  font-size: 32px;
+  font-family: 'Roboto Bold', sans-serif;
+}
+
+.vier > h2 {
+  font-size: 18px;
+}
+
+.vier > h2 > span > .homepage > h2 {
+  font-size: 18px;
+  display: inline-block;
+  color: #ea7f28;
+}
+
+.vier > h2 > span > .homepage > h2:hover {
+  font-size: 18px;
+  display: inline-block;
+  color: #ea7f28;
+  text-decoration: underline;
 }
 
 .Footer {

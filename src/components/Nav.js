@@ -1,15 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
     <div className="Nav">
       <div className="nav-logo">
-        <img className="logo" src="../../logo.png" alt="auto1-logo" />
+        <Link to="/">
+          <img className="logo" src="../../logo.png" alt="auto1-logo" />
+        </Link>
       </div>
       <div className="nav-links">
-        <p>Purchase</p>
-        <p>My Orders</p>
-        <p>Sell</p>
+        <span>Purchase</span>
+        <span>My Orders</span>
+        <span>Sell</span>
       </div>
     </div>
   );
