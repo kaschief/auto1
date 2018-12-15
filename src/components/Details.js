@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 
 const Details = () => {
   return (
@@ -16,10 +17,13 @@ const Details = () => {
           </p>
         </div>
         <div className="second">
-          <h1>Delta compression using up to 4 threads</h1>
-          <h1>Blah</h1>
-          <h1>Blah</h1>
-          <h1>Blah</h1>
+          <div className="contents">
+            <p>
+              If you like this car, click the button and save it in your
+              collection of favourite items.
+            </p>
+            <Button className="detail-button" />
+          </div>
         </div>
       </div>
     </div>
