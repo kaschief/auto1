@@ -31,6 +31,12 @@
   align-items: center;
 }
 
+.nav-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .nav-links > p {
   padding-left: 8px;
   padding-right: 8px;
@@ -39,7 +45,14 @@
 }
 
 .nav-logo {
-  flex-grow: 0.5;
+  align-self: left;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  max-width: 600px;
+  max-height: 30px;
 }
 
 .Home {
