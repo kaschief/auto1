@@ -6,7 +6,10 @@ const Home = () => {
   return (
     <div className="Home">
       <Filter />
-      <Cars />
+      <div>
+        <div className="available">All the available cars</div>
+        <Cars />
+      </div>
     </div>
   );
 };

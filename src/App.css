@@ -72,6 +72,30 @@
   align-content: flex-start;
 }
 
+.Filter {
+  border: 1px solid blue;
+  background: black;
+  height: 150px;
+  margin-top: 12px;
+  margin-right: 24px;
+  width: 200px;
+}
+
+.Cars {
+  border: 1px solid blue;
+  background: yellow;
+  height: 200px;
+  margin-top: 12px;
+  width: 700px;
+}
+
+.available {
+  margin-top: 12px;
+  width: 700px;
+  border: 1px solid blue;
+  background: yellow;
+}
+
 .Details {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -84,18 +108,6 @@
   flex-wrap: nowrap;
   justify-content: center;
   align-content: flex-start;
-}
-
-.Filter {
-  border: 1px solid blue;
-  background: black;
-  height: 100px;
-}
-
-.Cars {
-  border: 1px solid blue;
-  background: yellow;
-  height: 200px;
 }
 
 .banner {
