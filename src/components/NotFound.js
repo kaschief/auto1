@@ -11,7 +11,7 @@ const NotFound = () => {
         <h1>404 - Not Found</h1>
         <h2>Sorry, the page you are looking for does not exist.</h2>
         <h2>
-          You can always go back to{' '}
+          You can always go back to the{' '}
           <span>
             {' '}
             <Link to="/" className="homepage">
