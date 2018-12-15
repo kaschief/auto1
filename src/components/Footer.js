@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Footer = () => {
   return (
     <div className="Footer">
-      <h1>Footer</h1>
+      <p>© AUTO1 Group 2019</p>
     </div>
   );
 };
