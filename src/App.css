@@ -68,7 +68,7 @@
 .Details {
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  border: 2px solid purple;
+  border: 2px solid #ededed;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -79,10 +79,9 @@
 }
 
 .banner {
-  min-height: 400px;
+  min-height: 350px;
   width: 100vw;
-  border: 2px solid black;
-  background: black;
+  background: #ededed;
   align-self: flex-start;
 }
 
@@ -93,26 +92,43 @@
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-between;
-  margin-top: 24px;
+  padding-top: 24px;
   padding-left: 100px;
   padding-right: 100px;
-  border: 4px solid red;
+  height: 600px;
 }
 
 .first,
 .second {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  flex-basis: 50%;
+  text-align: left;
+  align-self: flex-start;
+  margin-top: -24px;
+  color: #4a4a4a;
 }
 
 .first {
   margin-right: 24px;
-  flex-basis: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  min-width: 300px;
+}
+
+.first > h1 {
+  font-family: 'Roboto Bold', sans-serif;
+  font-size: 32px;
+}
+
+.stock {
+  font-size: 14px;
 }
 
 .second {
-  flex-basis: 50%;
+  margin-left: 24px;
 }
-*/ .NotFound {
+
+.NotFound {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   border: 2px solid #ededed;

@@ -7,7 +7,7 @@ const Details = () => {
       <div className="details-info">
         <div className="first">
           <h1>Chrysler Crossfire</h1>
-          <p>Stock # 61184 - 152.263 KM - Petrol - Yellow</p>
+          <p className="stock">Stock # 61184 - 152.263 KM - Petrol - Yellow</p>
           <p>
             This car is currently available and can be delivered as soon as
             tomorrow morning. Please be aware that delivery times shown in this
