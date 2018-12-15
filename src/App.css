@@ -77,7 +77,7 @@
 .NotFound {
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  border: 2px solid green;
+  border: 2px solid #ededed;
   height: 100%;
   margin: 0px;
   padding: 0px;
@@ -96,6 +96,7 @@
 
 .vier > h2 {
   font-size: 18px;
+  color: #4a4a4a;
 }
 
 .vier > h2 > span > .homepage > h2 {

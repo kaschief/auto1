@@ -6,7 +6,7 @@ const NotFound = () => {
     <div className="NotFound">
       <div className="vier">
         <div className="vier-logo">
-          <img src="../../logo.png" alt="auto1-logo" />
+          <img className="logo" src="../../logo.png" alt="auto1-logo" />
         </div>
         <h1>404 - Not Found</h1>
         <h2>Sorry, the page you are looking for does not exist.</h2>
@@ -15,7 +15,7 @@ const NotFound = () => {
           <span>
             {' '}
             <Link to="/" className="homepage">
-              <h2>homepage</h2>
+              <h2 classname="homepage-link">homepage</h2>
             </Link>
           </span>
           .
