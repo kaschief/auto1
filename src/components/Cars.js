@@ -5,7 +5,10 @@ const Cars = () => {
   return (
     <div className="Cars">
       <Item />
-
+      <Item />
+      <Item /> <Item /> <Item /> <Item /> <Item /> <Item />
+      <Item />
+      <Item />
       <Item />
     </div>
   );
