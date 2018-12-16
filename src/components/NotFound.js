@@ -15,7 +15,7 @@ const NotFound = () => {
           <span>
             {' '}
             <Link to="/" className="homepage">
-              <h2 classname="homepage-link">homepage</h2>
+              <h2 className="homepage-link">homepage</h2>
             </Link>
           </span>
           .

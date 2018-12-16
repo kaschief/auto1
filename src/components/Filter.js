@@ -6,9 +6,9 @@ const Filter = () => {
     <div className="Filter">
       <div className="filter-contents">
         <p>Color</p>
-        <span>Color Button</span>
+        <span className="box">Color Buttoooooooooooooooon</span>
         <p>Manufacturer</p>
-        <span>Manufacturer Button</span>
+        <span className="box">Manufacturer Buttooooooooooon</span>
         <Button className="filter-button" text="Filter" />
       </div>
     </div>

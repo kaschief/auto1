@@ -1,9 +1,12 @@
 import React from 'react';
+import Item from './Item';
 
 const Cars = () => {
   return (
     <div className="Cars">
-      <h1>The Cars Section</h1>
+      <Item />
+
+      <Item />
     </div>
   );
 };

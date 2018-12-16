@@ -8,10 +8,14 @@ const Home = () => {
       <Filter />
       <div className="home-right">
         <div className="available">
-          <p>Available Cards</p>
-          <p>Number of the Pages</p>
-          <p>Sort By</p>
-          <p>Sort By Box</p>
+          <div className="available-left">
+            <h1 className="available-title">Available cars</h1>
+            <p>Showing 10 of 100 results</p>
+          </div>
+          <div className="available-right">
+            <p className="sort">Sort By</p>
+            <span className="box">Sort By Boooooooooooooooooox</span>
+          </div>
         </div>
         <Cars />
       </div>

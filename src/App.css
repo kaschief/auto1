@@ -82,6 +82,7 @@
   font-family: 'Roboto Regular', sans-serif;
   font-size: 12px;
   color: #4a4a4a;
+  height: 250px;
 }
 
 .filter-contents {
@@ -102,22 +103,86 @@
   align-self: flex-end;
 }
 
+.filter-contents > p {
+  margin-block-end: 0em;
+}
+
 .Cars {
-  border: 1px solid blue;
-  background: yellow;
-  height: 200px;
-  margin-top: 12px;
-  width: 500px;
+  color: #4a4a4a;
+}
+
+.container {
+  border: 1px solid #ededed;
+  margin: 12px;
+}
+
+.Item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+  border: 1px solid #ededed;
+  margin-bottom: 12px;
+  height: 80px;
+}
+
+.item-image {
+  flex-basis: 12.5%;
+  min-height: 55px;
+  min-width: 10px;
+  background: #ededed;
+  align-items: stretch;
+  margin: 12px;
+}
+
+.item-desc {
+  flex-basis: 80%;
+  margin: 12px;
+}
+
+.item-desc > h1 {
+  border-block-start: 0em;
 }
 
 .home-right {
   margin-top: 24px;
+  width: 650px;
 }
 .available {
-  width: 500px;
-  border: 1px solid blue;
-  background: yellow;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  color: #4a4a4a;
+}
+
+.available-left,
+.available-right {
+  text-align: left;
+}
+
+.available-title,
+.item-desc > h1 {
+  font-family: 'Roboto Bold', sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  margin-block-start: 0em;
+}
+
+.available-title > p {
+  font-size: 14px;
+}
+.sort {
+  margin-block-start: 0em;
+  font-size: 12px;
+}
+
+.box {
+  border: 1px solid #ededed;
+  padding: 8px;
+  font-size: 14px;
 }
 
 .Details {
@@ -174,8 +239,13 @@
 
 .stock {
   font-size: 14px;
+  margin-block-end: 0em;
 }
 
+.item-desc > .stock {
+  font-size: 12px;
+  line-height: 0em;
+}
 .second {
   margin-top: 4px;
   margin-left: 24px;
@@ -240,18 +310,32 @@ button:focus {
 }
 
 .vier > h2 {
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color: #4a4a4a;
 }
 
-.vier > h2 > span > .homepage > h2 {
+.homepage-link {
   font-size: 18px;
   display: inline-block;
   color: #ea7f28;
 }
 
-.vier > h2 > span > .homepage > h2:hover {
+.homepage-link:hover {
   font-size: 18px;
+  display: inline-block;
+  color: #ea7f28;
+  text-decoration: underline;
+}
+
+.view-link {
+  font-size: 12px;
+  display: inline-block;
+  color: #ea7f28;
+}
+
+.view-link:hover {
+  font-size: 12px;
   display: inline-block;
   color: #ea7f28;
   text-decoration: underline;
