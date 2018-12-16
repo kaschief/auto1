@@ -22,7 +22,7 @@ const Details = () => {
               If you like this car, click the button and save it in your
               collection of favourite items.
             </p>
-            <Button className="detail-button" />
+            <Button className="detail-button" text="Save" />
           </div>
         </div>
       </div>

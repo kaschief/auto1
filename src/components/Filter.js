@@ -9,7 +9,7 @@ const Filter = () => {
         <span>Color Button</span>
         <p>Manufacturer</p>
         <span>Manufacturer Button</span>
-        <Button className="filter-button" />
+        <Button className="filter-button" text="Filter" />
       </div>
     </div>
   );
