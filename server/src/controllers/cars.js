@@ -1,6 +1,6 @@
-const filterByProperty = require("../lib/filterByProperty");
-const paginate = require("../lib/paginate");
-const cars = require("../data/cars");
+const filterByProperty = require('../lib/filterByProperty');
+const paginate = require('../lib/paginate');
+const cars = require('../data/cars');
 
 function getCar(req, res) {
   const car = cars.find(function(eachCar) {
@@ -15,11 +15,17 @@ function getCar(req, res) {
 }
 
 function getCars(req, res) {
+  // console.log('req from getCars', req.page);
+
   let { manufacturer, color, sort, page } = req.query;
 
   let filteredCars = cars;
 
-  filteredCars = filterByProperty('manufacturerName', manufacturer, filteredCars);
+  filteredCars = filterByProperty(
+    'manufacturerName',
+    manufacturer,
+    filteredCars
+  );
   filteredCars = filterByProperty('color', color, filteredCars);
 
   if (['asc', 'des'].includes(sort)) {

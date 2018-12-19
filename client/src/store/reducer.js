@@ -2,16 +2,8 @@ import * as actionCreators from '../actions';
 
 const initialState = {
   cars: [],
-  manufacturers: ['All manufacturers', 'Honda', 'Tesla', 'Toyota'],
-  colors: [
-    'All car colors',
-    'Red',
-    'Yellow',
-    'Blue',
-    'White',
-    'Orange',
-    'Pink'
-  ],
+  manufacturers: [],
+  colors: [],
   selectedColor: '',
   selectedManufacturer: ''
 };
@@ -19,15 +11,26 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actionCreators.GET_CARS:
-      console.log('ACTION from CARS SWITCH', action.cars);
       return {
         ...state,
         cars: action.cars
       };
 
+    case actionCreators.GET_COLORS:
+      return {
+        ...state,
+        colors: action.colors
+      };
+
+    case actionCreators.GET_MANUFACTURERS:
+      console.log('ACTION from MANUFACTURERS SWITCH', action.manufacturers);
+      return {
+        ...state,
+        manufacturers: action.manufacturers
+      };
+
     case actionCreators.SELECT_COLOR:
       console.log('FROM COLOR CHANGER SWITCH', state.cars);
-      let selected = action.color.toLowerCase();
       return {
         ...state,
         selectedColor: action.color.toLowerCase()

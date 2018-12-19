@@ -11,10 +11,6 @@ class Cars extends Component {
     console.log('PROPS TO CARS', this.props);
     return (
       <div className="Cars">
-        {this.props.theManufacturer && (
-          <p>the manufacturer is {this.props.theManufacturer}</p>
-        )}
-
         {this.props.theCars && this.props.theColor === ''
           ? this.props.theCars.map(c => {
               return (
