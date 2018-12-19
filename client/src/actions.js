@@ -21,10 +21,10 @@ export const getCars = () => {
   };
 };
 
-export const getCarsSuccess = data => {
+export const getCarsSuccess = cars => {
   return {
     type: GET_CARS,
-    data
+    cars
   };
 };
 

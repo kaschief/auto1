@@ -19,16 +19,18 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actionCreators.GET_CARS:
-      console.log('ACTION from CARS SWITCH', action.data);
+      console.log('ACTION from CARS SWITCH', action.cars);
       return {
         ...state,
-        cars: action.data
+        cars: action.cars
       };
 
     case actionCreators.SELECT_COLOR:
+      console.log('FROM COLOR CHANGER SWITCH', state.cars);
+      let selected = action.color.toLowerCase();
       return {
         ...state,
-        selectedColor: action.color
+        selectedColor: action.color.toLowerCase()
       };
 
     case actionCreators.SELECT_MANUFACTURER:

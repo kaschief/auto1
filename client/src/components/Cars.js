@@ -11,12 +11,11 @@ class Cars extends Component {
     console.log('PROPS TO CARS', this.props);
     return (
       <div className="Cars">
-        {this.props.theColor && <p>{this.props.theColor} was selected</p>}
         {this.props.theManufacturer && (
-          <p>the Manu is {this.props.theManufacturer}</p>
+          <p>the manufacturer is {this.props.theManufacturer}</p>
         )}
 
-        {this.props.theCars
+        {this.props.theCars && this.props.theColor === ''
           ? this.props.theCars.map(c => {
               return (
                 <Item
@@ -30,7 +29,23 @@ class Cars extends Component {
                 />
               );
             })
-          : null}
+          : this.props.theCars
+              .filter(c => {
+                return c.color === this.props.theColor;
+              })
+              .map(c => {
+                return (
+                  <Item
+                    manufacturerName={c.manufacturerName}
+                    modelName={c.modelName}
+                    stock={c.stock}
+                    number={c.mileage.number}
+                    unit={c.mileage.unit}
+                    fuel={c.fuelType}
+                    color={c.color}
+                  />
+                );
+              })}
       </div>
     );
   }
