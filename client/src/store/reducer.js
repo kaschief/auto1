@@ -23,7 +23,6 @@ const reducer = (state = initialState, action) => {
       };
 
     case actionCreators.GET_MANUFACTURERS:
-      console.log('ACTION from MANUFACTURERS SWITCH', action.manufacturers);
       return {
         ...state,
         manufacturers: action.manufacturers
@@ -41,6 +40,7 @@ const reducer = (state = initialState, action) => {
         ...state,
         selectedManufacturer: action.manufacturer
       };
+
     case actionCreators.SORT_MILEAGE:
       console.log('SORT ACTION', action.sort.value);
       if (action.sort.value.includes('Ascending')) {
